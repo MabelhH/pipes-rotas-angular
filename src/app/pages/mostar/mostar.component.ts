@@ -2,7 +2,7 @@ import { HttpBackend } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DatosService } from 'src/app/servicios/datos.service';
-
+import { Location } from '@angular/common';
 @Component({
   selector: 'app-mostar',
   templateUrl: './mostar.component.html',
@@ -14,7 +14,7 @@ export class MostarComponent {
   enviar:string|null='';
   descripcion:number=0;
 
-constructor(private datos:DatosService,private route :ActivatedRoute){}
+constructor(private datos:DatosService,private route :ActivatedRoute ,private location:Location){}
 
 ngOnInit(): void {
   //this.datos.getAll().subscribe(datos =>console.log(datos));
@@ -24,7 +24,7 @@ ngOnInit(): void {
     this.descripcion=parseInt(this.enviar);
   }
 }
-back(){
- 
+goback():void{
+ this.location.back();
 }
 }
