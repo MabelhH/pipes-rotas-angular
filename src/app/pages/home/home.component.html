@@ -1,16 +1,26 @@
-<p>tabala</p>
-<ul>
-    <li *ngFor="let dato of input">
+<p>Tabla de Datos(los datos json estan debajo de la Tabla)</p><br>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Userid</th>
+        <th scope="col">Titleth</th>
+        <th scope="col">Complet</th>
+        <th scope="col">mostrar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of input">
+        <td>{{i.userId}}</td>
+        <td>{{i.title}}</td>
+        <td>{{i.completed}}</td>
+        <td><button class="btn btn-info" (click)="mostrar(i.id)">mostrar</button></td>
+      </tr>
+    </tbody>
+  </table>
+  <ul>
+    <li *ngFor="let datos of input">
         <pre>
-        {{dato | json}}
+        {{datos|json}}
         </pre>
     </li>
-</ul>
-
-<table>
-    <tbody>
-        <tr>
-
-        </tr>
-    </tbody>
-</table>
+</ul> 

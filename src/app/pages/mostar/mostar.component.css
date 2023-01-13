@@ -1,0 +1,29 @@
+.container{
+    font-size: 20px;
+   margin-top: 42px;
+   border:2px solid palegreen;
+   padding: 20px;
+   border-radius: 6px;
+   width: 50%;
+
+}
+p{
+    font-size: 30px;
+}
+.titulo{
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.lista{
+    margin-left: 30px;
+}
+.boton{
+background-color: blueviolet;
+border-radius: 8px;
+width: 150px;
+padding: 4px;
+}
+

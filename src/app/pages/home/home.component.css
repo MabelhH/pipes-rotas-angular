@@ -1,4 +1,41 @@
-ul{
+ul,li{
     list-style: none;
+    margin-left: 10px;
 }
+table{
+    width: 80%;
+    text-align: center;
+    border: 1px solid black;
+    margin-left: 150px;
+}
+td,tr,th{
+border: 2px solid black;
+}
+.link{
+    background-color: aqua;
+    border-radius: 7px;
+    padding: 10px; 
+    color: black;
+    padding: 8px;
+   margin-top: 45px;
+ }
+ p{
+    font-size:25px ;
+    text-align: center;
+    font-weight: bold;
+     margin-top: 30px;
+ }
+th{
+  background-color: rgb(179, 224, 252);
+}
+ 
+
+
+
+
+ 
+
+
+
+
 
